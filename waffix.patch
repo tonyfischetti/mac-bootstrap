@@ -1,0 +1,31 @@
+--- _cache.py	2013-11-08 22:25:14.000000000 -0500
++++ newcache.py	2013-11-08 22:29:24.000000000 -0500
+@@ -10,13 +10,13 @@
+ CC_TGT_F = ['-c', '-o']
+ CC_VERSION = ('4', '2', '1')
+ CFLAGS_MACBUNDLE = ['-fPIC']
+-CFLAGS_PYEMBED = ['-arch', 'x86_64', '-arch', 'i386', '-arch', 'x86_64', '-arch', 'i386', '-fno-strict-aliasing', '-fno-common', '-dynamic', '-arch', 'x86_64', '-arch', 'i386', '-fno-common', '-fno-strict-aliasing', '-fwrapv', '-mno-fused-madd', '-fwrapv', '-fno-strict-aliasing']
+-CFLAGS_PYEXT = ['-arch', 'x86_64', '-arch', 'i386', '-arch', 'x86_64', '-arch', 'i386', '-fno-strict-aliasing', '-fno-common', '-dynamic', '-arch', 'x86_64', '-arch', 'i386', '-fno-common', '-fno-strict-aliasing', '-fwrapv', '-mno-fused-madd', '-fwrapv', '-fno-strict-aliasing']
++CFLAGS_PYEMBED = ['-arch', 'x86_64', '-fno-strict-aliasing', '-fno-common', '-dynamic', '-arch', 'x86_64', '-arch', 'i386', '-fno-common', '-fno-strict-aliasing', '-fwrapv', '-mno-fused-madd', '-fwrapv', '-fno-strict-aliasing']
++CFLAGS_PYEXT = ['-arch', 'x86_64', '-fno-strict-aliasing', '-fno-common', '-dynamic', '-arch', 'x86_64', '-arch', 'i386', '-fno-common', '-fno-strict-aliasing', '-fwrapv', '-mno-fused-madd', '-fwrapv', '-fno-strict-aliasing']
+ CFLAGS_cshlib = ['-fPIC', '-compatibility_version', '1', '-current_version', '1']
+ COMPILER_CC = 'gcc'
+ CPPPATH_ST = '-I%s'
+-CXXFLAGS_PYEMBED = ['-arch', 'x86_64', '-arch', 'i386', '-arch', 'x86_64', '-arch', 'i386', '-fno-strict-aliasing', '-fno-common', '-dynamic', '-arch', 'x86_64', '-arch', 'i386', '-fno-common', '-fno-strict-aliasing', '-fwrapv', '-mno-fused-madd', '-fwrapv']
+-CXXFLAGS_PYEXT = ['-arch', 'x86_64', '-arch', 'i386', '-arch', 'x86_64', '-arch', 'i386', '-fno-strict-aliasing', '-fno-common', '-dynamic', '-arch', 'x86_64', '-arch', 'i386', '-fno-common', '-fno-strict-aliasing', '-fwrapv', '-mno-fused-madd', '-fwrapv']
++CXXFLAGS_PYEMBED = ['-arch', 'x86_64', '-fno-strict-aliasing', '-fno-common', '-dynamic', '-arch', 'x86_64', '-arch', 'i386', '-fno-common', '-fno-strict-aliasing', '-fwrapv', '-mno-fused-madd', '-fwrapv']
++CXXFLAGS_PYEXT = ['-arch', 'x86_64', '-fno-strict-aliasing', '-fno-common', '-dynamic', '-arch', 'x86_64', '-arch', 'i386', '-fno-common', '-fno-strict-aliasing', '-fwrapv', '-mno-fused-madd', '-fwrapv']
+ DATADIR = '/usr/local/share'
+ DATAROOTDIR = '/usr/local/share'
+ DEFINES = []
+@@ -52,8 +52,8 @@
+ LIB_PYTHON2.7 = ['python2.7']
+ LIB_ST = '-l%s'
+ LINKFLAGS_MACBUNDLE = ['-bundle', '-undefined', 'dynamic_lookup']
+-LINKFLAGS_PYEMBED = ['-arch', 'x86_64', '-arch', 'i386', '-Wl,-F.', '-arch', 'x86_64', '-arch', 'i386', '-Wl,-F.', '-arch', 'x86_64', '-arch', 'i386']
+-LINKFLAGS_PYEXT = ['-arch', 'x86_64', '-arch', 'i386', '-Wl,-F.', '-arch', 'x86_64', '-arch', 'i386', '-Wl,-F.', '-arch', 'x86_64', '-arch', 'i386']
++LINKFLAGS_PYEMBED = ['-arch', 'x86_64', '-Wl,-F.']
++LINKFLAGS_PYEXT = ['-arch', 'x86_64', '-Wl,-F.']
+ LINKFLAGS_cshlib = ['-dynamiclib']
+ LINKFLAGS_cstlib = []
+ LINK_CC = ['/usr/bin/gcc']
