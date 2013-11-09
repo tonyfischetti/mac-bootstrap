@@ -307,6 +307,7 @@ git submodule update
 #       like zsh being the default shell
 #       was zsh properly configured?
 #       nltk and java are still not set up
+#       what about Latex
 #       neither is R studio
 
 
